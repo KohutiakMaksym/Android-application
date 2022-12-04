@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Team-androind-application</string>
+    <string name="app_name">Team-android-application</string>
+    <string name="button">Button</string>
+    <string name="hello_world">Hello world!</string>
 </resources>
