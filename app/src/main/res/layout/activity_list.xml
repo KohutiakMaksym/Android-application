@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="619dp"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/home_bar2"
+            android:contentDescription="qwertyui" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="-72dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/profile"
+            tools:layout_editor_absoluteX="327dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginBottom="18dp"
+            app:srcCompat="@drawable/hombutton_"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <ImageButton
+            android:id="@+id/listButton"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toStartOf="@id/homeButton"
+            android:layout_toEndOf="@id/profileButton"
+            app:srcCompat="@drawable/list"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <ImageButton
+            android:id="@+id/basketButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="316dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="18dp"
+            app:srcCompat="@drawable/png_transparent_"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="528dp" />
+    </RelativeLayout>
+
+
+</ScrollView>

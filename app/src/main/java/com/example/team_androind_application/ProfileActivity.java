@@ -8,7 +8,7 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     private ImageButton profilebutton;
     private ImageButton listbutton;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         listbutton = (ImageButton) findViewById(R.id.ListButton);
         basketbutton = (ImageButton) findViewById(R.id.BasketButton);
         mainbutton = (ImageButton) findViewById(R.id.HomeButton);
-
+/*
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        */
+
         listbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                Intent intent = new Intent(ProfileActivity.this, ListActivity.class);
                 startActivity(intent);
 
             }
@@ -44,22 +46,21 @@ public class MainActivity extends AppCompatActivity {
         basketbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BasketActivity.class);
+                Intent intent = new Intent(ProfileActivity.this, BasketActivity.class);
                 startActivity(intent);
 
             }
         });
-        /*
         mainbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
                 startActivity(intent);
 
             }
         });
 
-        */
+
     }
 
 }
