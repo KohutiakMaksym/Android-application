@@ -9,7 +9,7 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
 
     private ImageButton profilebutton;
     private ImageButton listbutton;
@@ -30,38 +30,41 @@ public class MainActivity extends AppCompatActivity {
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-                startActivity(intent);
-
-            }
-        });
-        listbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
-                startActivity(intent);
-
-            }
-        });
-        basketbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BasketActivity.class);
+                Intent intent = new Intent(ListActivity.this, ProfileActivity.class);
                 startActivity(intent);
 
             }
         });
         /*
-        mainbutton.setOnClickListener(new View.OnClickListener() {
+        listbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(ListActivity.this, ListActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        */
+
+        basketbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListActivity.this, BasketActivity.class);
                 startActivity(intent);
 
             }
         });
 
-        */
+        mainbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListActivity.this, MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }
 
 }
