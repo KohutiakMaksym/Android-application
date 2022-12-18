@@ -20,7 +20,7 @@ public class BasketActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_basket2);
 
         profilebutton = (ImageButton) findViewById(R.id.ProfileButton);
         listbutton = (ImageButton) findViewById(R.id.ListButton);
