@@ -125,7 +125,7 @@
         app:srcCompat="@drawable/man_button_smaller" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/Woman"
         android:layout_width="400dp"
         android:layout_height="66dp"
         android:layout_alignParentStart="true"
