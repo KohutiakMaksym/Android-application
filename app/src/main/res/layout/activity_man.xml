@@ -19,18 +19,6 @@
             android:text="TextView" />
     </ScrollView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/sw_layout"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="147dp"
-        android:text="Button" />
-
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="wrap_content"

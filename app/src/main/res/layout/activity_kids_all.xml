@@ -5,29 +5,85 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/ButtonBack"
-        android:layout_width="35dp"
-        android:layout_height="29dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="352dp"
-        app:srcCompat="@drawable/button_back_sml" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/sw_layout"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="362dp"
-        android:layout_marginEnd="152dp"
-        android:text="Button" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ButtonBack"
+                android:layout_width="35dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="360dp"
+                app:srcCompat="@drawable/button_back_sml" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TUK"
+                android:textSize="34sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:layout_marginTop="100dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp"
+                    app:srcCompat="@drawable/k_shirt_1" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="226dp"
+                    android:layout_marginEnd="32dp"
+                    app:srcCompat="@drawable/k_shirt_2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="120dp">
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/kids_button" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/footer"
@@ -97,4 +153,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
+
 </RelativeLayout>
