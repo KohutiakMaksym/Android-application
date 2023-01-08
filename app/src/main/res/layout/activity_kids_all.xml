@@ -34,14 +34,14 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="237dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="100dp">
 
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="154dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="150dp"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="32dp"
                     app:srcCompat="@drawable/k_shirt_1" />
@@ -49,10 +49,8 @@
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="154dp"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentStart="true"
+                    android:layout_height="150dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="226dp"
                     android:layout_marginEnd="32dp"
                     app:srcCompat="@drawable/k_shirt_2" />
             </RelativeLayout>
@@ -62,7 +60,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="120dp">
 
-
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/k_hood_1" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -74,12 +76,6 @@
 
 
             </RelativeLayout>
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/kids_button" />
 
         </LinearLayout>
 
