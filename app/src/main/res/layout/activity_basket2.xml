@@ -1,98 +1,35 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <ScrollView
+        android:id="@+id/sw_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="115dp"
+        android:orientation="vertical">
 
-        <LinearLayout
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:text="TUK"
-                android:textSize="34sp" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp">
-
-                <ImageView
-                    android:id="@+id/image_view_2"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/test_image" />
-
-                <ImageView
-                    android:id="@+id/image_view_3"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="0dp"
-                    android:src="@drawable/test_image" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="120dp">
-
-                <ImageView
-                    android:id="@+id/image_view_2"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/test_image" />
-
-                <ImageView
-                    android:id="@+id/image_view_3"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="0dp"
-                    android:src="@drawable/test_image" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
-                android:layout_marginBottom="120dp">
-
-                <ImageView
-                    android:id="@+id/image_view_2"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/test_image" />
-
-                <ImageView
-                    android:id="@+id/image_view_3"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="2dp"
-                    android:src="@drawable/test_image" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
+            android:text="TextView" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sw_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="362dp"
+        android:layout_marginEnd="152dp"
+        android:text="Button" />
 
     <LinearLayout
         android:id="@+id/footer"
@@ -161,5 +98,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-
 </RelativeLayout>
