@@ -124,4 +124,16 @@
         android:layout_marginTop="227dp"
         app:srcCompat="@drawable/tops_button_smaller" />
 
+    <ImageButton
+        android:id="@+id/ButtonBack"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="352dp"
+        app:srcCompat="@drawable/button_back_sml" />
+
 </RelativeLayout>

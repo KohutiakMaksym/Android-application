@@ -18,6 +18,7 @@ public class Woman extends AppCompatActivity {
     private ImageButton allbutton;
     private ImageButton topsbutton;
     private ImageButton bottombutton;
+    private ImageButton backButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,6 +33,7 @@ public class Woman extends AppCompatActivity {
         allbutton = (ImageButton) findViewById(R.id.allButton);
         topsbutton = (ImageButton) findViewById(R.id.topsButton);
         bottombutton = (ImageButton) findViewById(R.id.bottomsButton);
+        backButton = (ImageButton) findViewById(R.id.ButtonBack);
 
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +91,14 @@ public class Woman extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Woman.this, WomanBottoms.class);
+                startActivity(intent);
+
+            }
+        });
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Woman.this, ListActivity.class);
                 startActivity(intent);
 
             }
